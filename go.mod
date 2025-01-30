@@ -1,4 +1,4 @@
-module github.com/chrede88/qubtTemplate
+module github.com/DSamuelHodge/dsamuelhodge.github.io
 
 go 1.23.5
 
