@@ -41,8 +41,11 @@ jobs:
           hugo-version: '0.122.0'
           extended: true
 
-      - name: Update theme
-        run: hugo mod get -u ./...
+      - name: Initialize Hugo Module
+        run: |
+          hugo mod init github.com/DSamuelHodge/dsamuelhodge.github.io
+          hugo mod get github.com/chrede88/qubt/v2@v2.0.1
+          hugo mod tidy
 
       - name: Build
         run: hugo --minify
