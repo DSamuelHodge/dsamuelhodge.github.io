@@ -1,4 +1,9 @@
-author: "DSamuel Hodge"
+author:
+  name: "DSamuel Hodge"
+  email: ""
+  location: ""
+  bio: "Developer focused on AI and machine learning"
+
 description: "Personal website and blog focused on AI, machine learning, and software development"
 
 social:
