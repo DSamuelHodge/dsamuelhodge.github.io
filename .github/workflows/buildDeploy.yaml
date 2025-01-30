@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Go
@@ -41,11 +41,11 @@ jobs:
           hugo-version: '0.122.0'
           extended: true
 
-      - name: Initialize Hugo Module
+      - name: Setup Hugo Modules
         run: |
-          hugo mod init github.com/DSamuelHodge/dsamuelhodge.github.io
-          hugo mod get github.com/chrede88/qubt/v2@v2.0.1
+          rm -f go.sum
           hugo mod tidy
+          hugo mod verify
 
       - name: Build
         run: hugo --minify
