@@ -2,8 +2,8 @@
 ## CHANGE THESE
 ############################
 
-baseURL: "https://DSamuelHodge.github.io/dsamuelhodge.github.io"
-title: dsamuelhodge.github.io
+baseURL: "https://dsamuelhodge.github.io/"
+title: "DSamuel Hodge"
 
 ############################
 ## MISC
@@ -13,3 +13,5 @@ enableEmoji: true
 disableKinds: ["taxonomy", "term"]
 languageCode: "en-us"
 enableRobotsTXT: true
+
+theme: "qubt"
